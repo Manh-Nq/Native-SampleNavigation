@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Green"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".FragmentDemo1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="goto frg2" />
+
+    <Button
+        android:id="@+id/bt_frg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="goto frgmain" />
+
+    <EditText
+        android:id="@+id/edt_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1"
+        android:textSize="100dp" />
+
+</LinearLayout>

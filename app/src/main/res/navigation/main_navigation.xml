@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentDemo1">
+
+    <fragment
+        android:id="@+id/fragmentDemo1"
+        android:name="com.tapi.testnavigation.FragmentDemo1"
+        android:label="fragment_demo1"
+        tools:layout="@layout/fragment_demo1">
+        <action
+            android:id="@+id/frg1_goto_frg2"
+            app:destination="@id/fragmentDemo2" />
+        <action
+            android:id="@+id/action_fragmentDemo1_to_frgMain"
+            app:destination="@id/frgMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDemo2"
+        android:name="com.tapi.testnavigation.FragmentDemo2"
+        android:label="fragment_demo2"
+        tools:layout="@layout/fragment_demo2">
+        <action
+            android:id="@+id/frg2_goto_frg3"
+            app:destination="@id/fragmentDemo3" />
+        <argument
+            android:name="dataFrom1"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDemo3"
+        android:name="com.tapi.testnavigation.FragmentDemo3"
+        android:label="fragment_demo3"
+        tools:layout="@layout/fragment_demo3">
+
+        <action
+            android:id="@+id/frg3_goto_frg1"
+            app:destination="@id/fragmentDemo1"
+            app:popUpTo="@id/fragmentDemo1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_fragmentDemo3_to_fragmentDemo4"
+            app:destination="@id/fragmentDemo4" />
+        <argument
+            android:name="ReceiveDataFrom2"
+            app:argType="string[]" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentDemo4"
+        android:name="com.tapi.testnavigation.FragmentDemo4"
+        android:label="fragment_demo4"
+        tools:layout="@layout/fragment_demo4">
+        <action
+            android:id="@+id/action_fragmentDemo4_to_fragmentDemo1"
+            app:destination="@id/fragmentDemo1" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgMain"
+        android:name="com.tapi.testnavigation.FrgMain"
+        android:label="FrgMain" />
+ </navigation>
