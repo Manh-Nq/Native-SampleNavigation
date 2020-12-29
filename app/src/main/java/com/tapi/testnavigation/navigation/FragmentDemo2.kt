@@ -1,4 +1,4 @@
-package com.tapi.testnavigation
+package com.tapi.testnavigation.navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.tapi.testnavigation.R
 
 class FragmentDemo2 : Fragment() {
     private var num: Int = 0
@@ -24,7 +25,7 @@ class FragmentDemo2 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         rootView =
             LayoutInflater.from(requireContext()).inflate(R.layout.fragment_demo2, container, false)
         // Inflate the layout for this fragment

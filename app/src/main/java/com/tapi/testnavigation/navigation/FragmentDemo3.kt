@@ -1,4 +1,4 @@
-package com.tapi.testnavigation
+package com.tapi.testnavigation.navigation
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.tapi.testnavigation.R
 
 
 class FragmentDemo3 : Fragment() {

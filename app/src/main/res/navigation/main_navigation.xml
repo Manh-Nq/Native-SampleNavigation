@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentDemo1"
-        android:name="com.tapi.testnavigation.FragmentDemo1"
+        android:name="com.tapi.testnavigation.navigation.FragmentDemo1"
         android:label="fragment_demo1"
         tools:layout="@layout/fragment_demo1">
         <action
@@ -19,12 +19,13 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentDemo2"
-        android:name="com.tapi.testnavigation.FragmentDemo2"
+        android:name="com.tapi.testnavigation.navigation.FragmentDemo2"
         android:label="fragment_demo2"
         tools:layout="@layout/fragment_demo2">
         <action
             android:id="@+id/frg2_goto_frg3"
             app:destination="@id/fragmentDemo3" />
+
         <argument
             android:name="dataFrom1"
             android:defaultValue="0"
@@ -33,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentDemo3"
-        android:name="com.tapi.testnavigation.FragmentDemo3"
+        android:name="com.tapi.testnavigation.navigation.FragmentDemo3"
         android:label="fragment_demo3"
         tools:layout="@layout/fragment_demo3">
 
@@ -54,7 +55,7 @@
 
     <fragment
         android:id="@+id/fragmentDemo4"
-        android:name="com.tapi.testnavigation.FragmentDemo4"
+        android:name="com.tapi.testnavigation.navigation.FragmentDemo4"
         android:label="fragment_demo4"
         tools:layout="@layout/fragment_demo4">
         <action
@@ -63,6 +64,7 @@
     </fragment>
     <fragment
         android:id="@+id/frgMain"
-        android:name="com.tapi.testnavigation.FrgMain"
+        tools:layout="@layout/fragment_frg_main"
+        android:name="com.tapi.testnavigation.navigation.FrgMain"
         android:label="FrgMain" />
  </navigation>

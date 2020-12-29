@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/frg1"
-        android:name="com.tapi.testnavigation.Frg1"
+        android:name="com.tapi.testnavigation.navigation.Frg1"
         android:label="fragment_frg1"
         tools:layout="@layout/fragment_frg1">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/frg2"
-        android:name="com.tapi.testnavigation.Frg2"
+        android:name="com.tapi.testnavigation.navigation.Frg2"
         android:label="fragment_frg2"
         tools:layout="@layout/fragment_frg2">
         <action

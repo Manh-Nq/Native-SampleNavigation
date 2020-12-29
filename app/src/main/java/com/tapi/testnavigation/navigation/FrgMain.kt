@@ -1,4 +1,4 @@
-package com.tapi.testnavigation
+package com.tapi.testnavigation.navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,17 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import com.tapi.testnavigation.R
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [FrgMain.newInstance] factory method to
- * create an instance of this fragment.
- */
 class FrgMain : Fragment() {
     private lateinit var bt1: Button
     private lateinit var rootView: View

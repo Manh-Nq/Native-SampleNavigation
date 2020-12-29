@@ -1,4 +1,4 @@
-package com.tapi.testnavigation
+package com.tapi.testnavigation.navigation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.tapi.testnavigation.R
 
 class FragmentDemo4 : Fragment() {
     private lateinit var btGo: Button

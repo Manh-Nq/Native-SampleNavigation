@@ -5,7 +5,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Frg1">
+    tools:context=".navigation.Frg1">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

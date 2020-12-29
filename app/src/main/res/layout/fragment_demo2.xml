@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:background="@color/Blue"
     android:layout_height="match_parent"
-    tools:context=".FragmentDemo1">
+    tools:context=".navigation.FragmentDemo1">
 
     <!-- TODO: Update blank fragment layout -->
     <Button
